@@ -1,57 +1,67 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html, body{
-	height: 200%;
-	width:  100%;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 100%;
-
+html, body {
+  height: 200%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
 }
 
-h1{
-	margin: 1rem 0;
+h1 {
+  margin: 1rem 0;
 }
 
-section{
-	background: lightgrey;
-	border-bottom: 1px solid #000;
-	height: 600px;
-	margin-top: 2rem;
-
+section {
+  background: lightgrey;
+  border-bottom: 1px solid #000;
+  height: 600px;
+  margin-top: 2rem;
+	position: relative;
 }
 
-.wrapper{
-	max-width: 600px;
-	margin: auto;
+.wrapper {
+  max-width: 600px;
+  margin: auto;
 }
 
-.row{
-	width: 100%;
+.row {
+  width: 100%;
 }
 
-.col{
-	width: 200px;
-	height: 200px;
+.col {
+  width: 200px;
+  height: 200px;
 }
 
-.electric-purple{
-	background: #C200FB;
+.electric-purple {
+  background: #C200FB;
+  position: absolute;
+  top: 0;
+  right: 0;
+	z-index: 2;
 }
 
-.raspberry{
-	background: #EC0868;
-
+.raspberry {
+  background: #EC0868;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+	z-index: 1;
 }
 
-.ferrari-red{
-	background: #FC2F00;
-
-
+.ferrari-red {
+  background: #fc2f00;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+	z-index: 3;
 }
 
-.ferrari-red{
+.black{
 	background: #000;
-
+	position: fixed;
+	top: 0;
+	left: 0;
 }
